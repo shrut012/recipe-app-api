@@ -41,4 +41,5 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     objects = UserManager()
 
-    USERNAME_FIELD = "email"   # replacing default 'username' field with 'email' for authentication
+    # replacing default 'username' field with 'email' for authentication
+    USERNAME_FIELD = "email"
